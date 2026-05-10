@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>FREEGUY V4 — Digital Streetwear</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <h1>FREEGUY</h1>
+      <p>CREATED BY ADRIEN · 14 YEARS OLD · FRANCE</p>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <canvas id="particles"></canvas>
+  <div class="cursor"></div>
+  <div class="grain"></div>
+  <div class="scan"></div>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="ambient ambient-c"></div>
+
+  <header class="header">
+    <button class="brand" data-page="home">freeguy<span>✦</span></button>
+    <nav class="desktop-nav">
+      <button data-page="collection">Collection</button>
+      <button data-page="lookbook">Lookbook</button>
+      <button data-page="about">À propos</button>
+      <button data-page="contact">Contact</button>
+    </nav>
+    <div class="header-actions">
+      <button id="audioBtn" title="Ambiance">♪</button>
+      <button id="searchBtn" title="Recherche">⌕</button>
+      <button id="cartOpen" class="cart-button">▢<span id="cartCount">0</span></button>
+      <button id="menuOpen" class="menu-button">☰</button>
+    </div>
+  </header>
+
+  <section id="home" class="page home active">
+    <aside class="visual-rail">
+      <img src="assets/freeguy_asset_11.jpg" alt="FREEGUY symbols">
+      <div class="rail-code">FG-014-FR<br>NEW GEN<br>PARIS</div>
+      <div class="rail-bars"></div>
+    </aside>
+
+    <div class="hero-menu">
+      <button data-page="home"><em>01.</em><strong>ACCUEIL</strong><small>ENTER THE WORLD</small></button>
+      <button data-page="collection"><em>02.</em><strong>COLLECTION</strong><small>CAPS & DROPS</small></button>
+      <button data-page="newdrop"><em>03.</em><strong>NOUVEAUTÉS</strong><small>LIMITED RELEASE</small></button>
+      <button data-page="lookbook"><em>04.</em><strong>LOOKBOOK</strong><small>DIGITAL GALLERY</small></button>
+      <button data-page="about"><em>05.</em><strong>À PROPOS</strong><small>CREATED BY ADRIEN</small></button>
+      <button data-page="contact"><em>06.</em><strong>CONTACT</strong><small>JOIN THE MOVEMENT</small></button>
+    </div>
+
+    <div class="hero-stage">
+      <div class="stage-grid"></div>
+      <img class="angel-main float-object" src="assets/freeguy_asset_07.jpg" alt="Ange FREEGUY">
+      <img class="floating-card card-one" src="assets/freeguy_asset_15.jpg" alt="">
+      <img class="floating-card card-two" src="assets/freeguy_asset_12.jpg" alt="">
+      <div class="holo-orb orb-one"></div>
+      <div class="holo-orb orb-two"></div>
+      <div class="hero-copy">
+        <p>DIGITAL STREET CULTURE</p>
+        <h1>FREEGUY PARIS</h1>
+        <span>Art · Street · Future</span>
+      </div>
+    </div>
+
+    <div class="home-bottom">
+      <div>
+        <b>FRENCH STREETWEAR</b>
+        <p>Marque créée par Adrien, 14 ans.</p>
+      </div>
+      <div>
+        <b>DROP STATUS</b>
+        <p>Capsule en préparation · stock limité</p>
+      </div>
+      <button data-page="collection" class="primary">Voir la collection →</button>
+    </div>
+  </section>
+
+  <section id="collection" class="page collection">
+    <div class="section-head">
+      <small>02 / COLLECTION</small>
+      <h1>CAPSULE CAPS</h1>
+      <p>Produits flottants, rotation 3D, tailles, stock, favoris, quick view et panier dynamique.</p>
+    </div>
+
+    <div class="filters">
+      <button class="active" data-filter="all">Tout</button>
+      <button data-filter="limited">Limited</button>
+      <button data-filter="new">Nouveau</button>
+      <button data-filter="premium">Premium</button>
+    </div>
+
+    <div class="product-grid">
+      <article class="product-card" data-id="pinkfur" data-name="TR3EGY Pink Fur" data-price="49" data-tag="limited">
+        <button class="favorite">♡</button>
+        <div class="stock">Stock : 12</div>
+        <img src="assets/freeguy_asset_01.jpg" alt="TR3EGY Pink Fur">
+        <h2>TR3EGY Pink Fur</h2>
+        <p>Pink fur snapback · Y2K energy</p>
+        <strong>49€</strong>
+        <select><option>S/M</option><option>M/L</option><option>L/XL</option></select>
+        <div class="product-actions">
+          <button class="quick">Quick view</button>
+          <button class="add">Ajouter</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-id="blackparis" data-name="FREEGUY Black Paris" data-price="59" data-tag="premium">
+        <button class="favorite">♡</button>
+        <div class="stock">Stock : 8</div>
+        <img src="assets/freeguy_asset_02.jpg" alt="FREEGUY Black Paris">
+        <h2>FREEGUY Black Paris</h2>
+        <p>Black cap · French digital streetwear</p>
+        <strong>59€</strong>
+        <select><option>S/M</option><option>M/L</option><option>L/XL</option></select>
+        <div class="product-actions">
+          <button class="quick">Quick view</button>
+          <button class="add">Ajouter</button>
+        </div>
+      </article>
+
+      <article class="product-card" data-id="archive" data-name="FREEGUY Archive Concept" data-price="69" data-tag="new">
+        <button class="favorite">♡</button>
+        <div class="stock">Prototype</div>
+        <img src="assets/freeguy_asset_03.jpg" alt="FREEGUY Archive">
+        <h2>Archive Concept</h2>
+        <p>Prototype visual · future drop</p>
+        <strong>69€</strong>
+        <select><option>One size</option></select>
+        <div class="product-actions">
+          <button class="quick">Quick view</button>
+          <button class="add">Ajouter</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="newdrop" class="page newdrop">
+    <div class="split">
+      <div>
+        <small>03 / NOUVEAUTÉS</small>
+        <h1>NOUVEAU DROP EN APPROCHE</h1>
+        <p>FREEGUY construit une capsule streetwear française pensée comme une expérience digitale. Pas juste un produit : un univers.</p>
+        <div class="countdown">
+          <div><b id="days">14</b><span>jours</span></div>
+          <div><b id="hours">08</b><span>heures</span></div>
+          <div><b id="mins">24</b><span>minutes</span></div>
+        </div>
+        <button class="primary" data-page="collection">Précommander →</button>
+      </div>
+      <div class="drop-visual">
+        <img src="assets/freeguy_asset_08.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section id="lookbook" class="page lookbook">
+    <div class="section-head">
+      <small>04 / LOOKBOOK</small>
+      <h1>DIGITAL GALLERY</h1>
+      <p>Galerie immersive : wireframes, ange, textures, moodboards et direction artistique FREEGUY.</p>
+    </div>
+    <div class="gallery">
+      <img src="assets/freeguy_asset_09.jpg" alt="">
+      <img src="assets/freeguy_asset_10.jpg" alt="">
+      <img src="assets/freeguy_asset_11.jpg" alt="">
+      <img src="assets/freeguy_asset_12.jpg" alt="">
+      <img src="assets/freeguy_asset_13.jpg" alt="">
+      <img src="assets/freeguy_asset_14.jpg" alt="">
+      <img src="assets/freeguy_asset_15.jpg" alt="">
+      <img src="assets/freeguy_asset_16.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="about" class="page about">
+    <div class="about-card">
+      <small>05 / À PROPOS</small>
+      <h1>UNE MARQUE FRANÇAISE CRÉÉE PAR ADRIEN, 14 ANS.</h1>
+      <p>FREEGUY est une marque française pensée par Adrien. Le projet mélange streetwear, culture digitale, design futuriste et ambition nouvelle génération.</p>
+      <p>L’objectif : construire une identité forte, reconnaissable, premium et vivante. Une marque qui ne copie pas, mais qui crée son propre monde.</p>
+      <div class="values">
+        <span>Liberté</span><span>Ambition</span><span>Créativité</span><span>Nouvelle génération</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="page contact">
+    <div class="section-head">
+      <small>06 / CONTACT</small>
+      <h1>CONTACTER FREEGUY</h1>
+      <p>Formulaire premium avec confirmation visuelle. Pour l’envoi réel, on peut brancher Formspree, EmailJS ou un backend.</p>
+    </div>
+    <form id="contactForm" class="contact-form">
+      <input required placeholder="Ton nom">
+      <input required type="email" placeholder="Ton email">
+      <select>
+        <option>Collaboration</option>
+        <option>Commande</option>
+        <option>Question</option>
+        <option>Presse / média</option>
+      </select>
+      <textarea required placeholder="Ton message"></textarea>
+      <button>Envoyer le message</button>
+      <p id="formStatus"></p>
+    </form>
+  </section>
+
+  <div id="menuPanel" class="menu-panel">
+    <button id="menuClose">×</button>
+    <button data-page="home">ACCUEIL</button>
+    <button data-page="collection">COLLECTION</button>
+    <button data-page="newdrop">NOUVEAUTÉS</button>
+    <button data-page="lookbook">LOOKBOOK</button>
+    <button data-page="about">À PROPOS</button>
+    <button data-page="contact">CONTACT</button>
+  </div>
+
+  <aside id="cartPanel" class="cart-panel">
+    <button id="cartClose">×</button>
+    <h2>PANIER FREEGUY</h2>
+    <div id="cartItems"></div>
+    <div class="cart-total">Total : <b id="cartTotal">0€</b></div>
+    <button id="checkoutBtn">Checkout</button>
+  </aside>
+
+  <div id="quickModal" class="quick-modal">
+    <button id="quickClose">×</button>
+    <div id="quickContent"></div>
+  </div>
+
+  <div id="toast" class="toast">Ajouté au panier</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
